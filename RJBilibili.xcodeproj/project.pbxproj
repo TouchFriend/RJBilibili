@@ -3,10 +3,11 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		75E51F968D534DE1E747A685 /* Pods_RJBilibili.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9ADB011A056881D699FCEEF /* Pods_RJBilibili.framework */; };
 		BF2B45922598C1E8001581F3 /* RJHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B45912598C1E8001581F3 /* RJHomeViewController.swift */; };
 		BF2B459D2598C217001581F3 /* RJChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B459C2598C217001581F3 /* RJChannelViewController.swift */; };
 		BF2B45A22598C21D001581F3 /* RJTrendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B45A12598C21D001581F3 /* RJTrendViewController.swift */; };
@@ -20,6 +21,8 @@
 		BFF2CE412598BB5F00155F4F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFF2CE3F2598BB5F00155F4F /* LaunchScreen.storyboard */; };
 		BFF2CE4C2598BB6000155F4F /* RJBilibiliTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF2CE4B2598BB6000155F4F /* RJBilibiliTests.swift */; };
 		BFF2CE572598BB6000155F4F /* RJBilibiliUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF2CE562598BB6000155F4F /* RJBilibiliUITests.swift */; };
+		CDEBEF18D4528636D4FAA1AB /* Pods_RJBilibili_RJBilibiliUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2D9F6FE5DFB1B969D047CDFF /* Pods_RJBilibili_RJBilibiliUITests.framework */; };
+		D633E68D68677BF516DA37BF /* Pods_RJBilibiliTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D922ECF5BD15E9828FA3DAA /* Pods_RJBilibiliTests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2D9F6FE5DFB1B969D047CDFF /* Pods_RJBilibili_RJBilibiliUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RJBilibili_RJBilibiliUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FEF2936C840BC8E2C441D0F /* Pods-RJBilibiliTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJBilibiliTests.debug.xcconfig"; path = "Target Support Files/Pods-RJBilibiliTests/Pods-RJBilibiliTests.debug.xcconfig"; sourceTree = "<group>"; };
+		68E2CC6002A2CE6D335E4D7F /* Pods-RJBilibili.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJBilibili.debug.xcconfig"; path = "Target Support Files/Pods-RJBilibili/Pods-RJBilibili.debug.xcconfig"; sourceTree = "<group>"; };
+		6D922ECF5BD15E9828FA3DAA /* Pods_RJBilibiliTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RJBilibiliTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9BBEB9770E8B2DB050F2037F /* Pods-RJBilibili-RJBilibiliUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJBilibili-RJBilibiliUITests.debug.xcconfig"; path = "Target Support Files/Pods-RJBilibili-RJBilibiliUITests/Pods-RJBilibili-RJBilibiliUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		B9ADB011A056881D699FCEEF /* Pods_RJBilibili.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RJBilibili.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF1683B0A3B088F70C9EE996 /* Pods-RJBilibiliTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJBilibiliTests.release.xcconfig"; path = "Target Support Files/Pods-RJBilibiliTests/Pods-RJBilibiliTests.release.xcconfig"; sourceTree = "<group>"; };
 		BF2B45912598C1E8001581F3 /* RJHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RJHomeViewController.swift; sourceTree = "<group>"; };
 		BF2B459C2598C217001581F3 /* RJChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RJChannelViewController.swift; sourceTree = "<group>"; };
 		BF2B45A12598C21D001581F3 /* RJTrendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RJTrendViewController.swift; sourceTree = "<group>"; };
@@ -59,6 +69,8 @@
 		BFF2CE522598BB6000155F4F /* RJBilibiliUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RJBilibiliUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF2CE562598BB6000155F4F /* RJBilibiliUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RJBilibiliUITests.swift; sourceTree = "<group>"; };
 		BFF2CE582598BB6000155F4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E59F4F5D774D59DA5FA1F31C /* Pods-RJBilibili.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJBilibili.release.xcconfig"; path = "Target Support Files/Pods-RJBilibili/Pods-RJBilibili.release.xcconfig"; sourceTree = "<group>"; };
+		EE4A83F22A8E44350CE3F1F9 /* Pods-RJBilibili-RJBilibiliUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJBilibili-RJBilibiliUITests.release.xcconfig"; path = "Target Support Files/Pods-RJBilibili-RJBilibiliUITests/Pods-RJBilibili-RJBilibiliUITests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +78,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				75E51F968D534DE1E747A685 /* Pods_RJBilibili.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -73,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D633E68D68677BF516DA37BF /* Pods_RJBilibiliTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +94,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CDEBEF18D4528636D4FAA1AB /* Pods_RJBilibili_RJBilibiliUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -285,6 +300,8 @@
 				BFF2CE4A2598BB6000155F4F /* RJBilibiliTests */,
 				BFF2CE552598BB6000155F4F /* RJBilibiliUITests */,
 				BFF2CE322598BB5E00155F4F /* Products */,
+				D84EF14D5478233561D5C0EC /* Pods */,
+				CC29CE1848BDD00B04CF6449 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -343,6 +360,29 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
+		CC29CE1848BDD00B04CF6449 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B9ADB011A056881D699FCEEF /* Pods_RJBilibili.framework */,
+				2D9F6FE5DFB1B969D047CDFF /* Pods_RJBilibili_RJBilibiliUITests.framework */,
+				6D922ECF5BD15E9828FA3DAA /* Pods_RJBilibiliTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D84EF14D5478233561D5C0EC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				68E2CC6002A2CE6D335E4D7F /* Pods-RJBilibili.debug.xcconfig */,
+				E59F4F5D774D59DA5FA1F31C /* Pods-RJBilibili.release.xcconfig */,
+				9BBEB9770E8B2DB050F2037F /* Pods-RJBilibili-RJBilibiliUITests.debug.xcconfig */,
+				EE4A83F22A8E44350CE3F1F9 /* Pods-RJBilibili-RJBilibiliUITests.release.xcconfig */,
+				4FEF2936C840BC8E2C441D0F /* Pods-RJBilibiliTests.debug.xcconfig */,
+				BF1683B0A3B088F70C9EE996 /* Pods-RJBilibiliTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -350,9 +390,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFF2CE5B2598BB6000155F4F /* Build configuration list for PBXNativeTarget "RJBilibili" */;
 			buildPhases = (
+				8A221A8BA514F104F83A9408 /* [CP] Check Pods Manifest.lock */,
 				BFF2CE2D2598BB5E00155F4F /* Sources */,
 				BFF2CE2E2598BB5E00155F4F /* Frameworks */,
 				BFF2CE2F2598BB5E00155F4F /* Resources */,
+				03D2D5DB5170B8F15E119769 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -367,6 +409,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFF2CE5E2598BB6000155F4F /* Build configuration list for PBXNativeTarget "RJBilibiliTests" */;
 			buildPhases = (
+				8BDE612D6C0A36ECD1C158E3 /* [CP] Check Pods Manifest.lock */,
 				BFF2CE432598BB5F00155F4F /* Sources */,
 				BFF2CE442598BB5F00155F4F /* Frameworks */,
 				BFF2CE452598BB5F00155F4F /* Resources */,
@@ -385,9 +428,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = BFF2CE612598BB6000155F4F /* Build configuration list for PBXNativeTarget "RJBilibiliUITests" */;
 			buildPhases = (
+				F81D076730D533EAC3C1AF2B /* [CP] Check Pods Manifest.lock */,
 				BFF2CE4E2598BB6000155F4F /* Sources */,
 				BFF2CE4F2598BB6000155F4F /* Frameworks */,
 				BFF2CE502598BB6000155F4F /* Resources */,
+				959B4AFB2B98798AB5ED1323 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -469,6 +514,109 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		03D2D5DB5170B8F15E119769 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RJBilibili/Pods-RJBilibili-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RJBilibili/Pods-RJBilibili-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RJBilibili/Pods-RJBilibili-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8A221A8BA514F104F83A9408 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RJBilibili-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8BDE612D6C0A36ECD1C158E3 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RJBilibiliTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		959B4AFB2B98798AB5ED1323 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RJBilibili-RJBilibiliUITests/Pods-RJBilibili-RJBilibiliUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-RJBilibili-RJBilibiliUITests/Pods-RJBilibili-RJBilibiliUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RJBilibili-RJBilibiliUITests/Pods-RJBilibili-RJBilibiliUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F81D076730D533EAC3C1AF2B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-RJBilibili-RJBilibiliUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		BFF2CE2D2598BB5E00155F4F /* Sources */ = {
@@ -655,6 +803,7 @@
 		};
 		BFF2CE5C2598BB6000155F4F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 68E2CC6002A2CE6D335E4D7F /* Pods-RJBilibili.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -675,6 +824,7 @@
 		};
 		BFF2CE5D2598BB6000155F4F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = E59F4F5D774D59DA5FA1F31C /* Pods-RJBilibili.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -695,6 +845,7 @@
 		};
 		BFF2CE5F2598BB6000155F4F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4FEF2936C840BC8E2C441D0F /* Pods-RJBilibiliTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -717,6 +868,7 @@
 		};
 		BFF2CE602598BB6000155F4F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF1683B0A3B088F70C9EE996 /* Pods-RJBilibiliTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -739,6 +891,7 @@
 		};
 		BFF2CE622598BB6000155F4F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9BBEB9770E8B2DB050F2037F /* Pods-RJBilibili-RJBilibiliUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -759,6 +912,7 @@
 		};
 		BFF2CE632598BB6000155F4F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EE4A83F22A8E44350CE3F1F9 /* Pods-RJBilibili-RJBilibiliUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

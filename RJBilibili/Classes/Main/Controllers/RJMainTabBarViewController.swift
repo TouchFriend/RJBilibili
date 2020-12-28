@@ -17,18 +17,18 @@ class RJMainTabBarViewController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.setupInit()
+        setupInit()
     }
     
     // MARK: - SetupInit
     func setupInit() {
-        self.view.backgroundColor = .white
+        view.backgroundColor = .white
         var viewControllers = [UIViewController]()
         for tabBarItemData in tabBarItemDatas {
             let viewControllerName = tabBarItemData[ViewControllerName]!
             let title = tabBarItemData[TabBarItemTitle]!
             let imageName = tabBarItemData[TabBarItemImage]!
-            let navigationController = self.getNavigationController(viewControllerName: viewControllerName, title: title, imageName: imageName)
+            let navigationController = getNavigationController(viewControllerName: viewControllerName, title: title, imageName: imageName)
             viewControllers.append(navigationController)
         }
         self.viewControllers = viewControllers
