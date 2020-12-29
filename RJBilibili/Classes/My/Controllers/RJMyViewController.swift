@@ -10,6 +10,7 @@ import UIKit
 import SnapKit
 
 private let RJServeCellID = "RJServeCollectionViewCell"
+private let RJServeHeaderID = "RJServeCollectionHeaderView"
 let RJScreenWidth = {
     UIScreen.main.bounds.size.width.native
 }()
@@ -35,9 +36,9 @@ class RJMyViewController: UIViewController {
         setupInit()
     }
     
-// MARK: - SetupInit
+    // MARK: - SetupInit
     
-    func setupInit() {
+    private func setupInit() {
         view.backgroundColor = .white
         
         view.addSubview(headerView)
@@ -55,23 +56,24 @@ class RJMyViewController: UIViewController {
         setupCollectionView()
     }
     
-    func setupCollectionView() {
+    private func setupCollectionView() {
         let flowLayout = UICollectionViewFlowLayout()
         flowLayout.scrollDirection = .vertical
         flowLayout.estimatedItemSize = CGSize.zero
+        flowLayout.sectionInset = UIEdgeInsets.zero
         
-        let serveCollectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: flowLayout)
+        serveCollectionView = UICollectionView(frame: CGRect.zero, collectionViewLayout: flowLayout)
         view.addSubview(serveCollectionView)
         serveCollectionView.snp.makeConstraints { (make) in
             make.top.equalTo(headerView.snp.bottom)
             make.left.right.bottom.equalToSuperview()
         }
-        self.serveCollectionView = serveCollectionView
         serveCollectionView.backgroundColor = .white
         serveCollectionView.showsHorizontalScrollIndicator = false
         serveCollectionView.dataSource = self
         serveCollectionView.delegate = self
         serveCollectionView.register(RJServeCollectionViewCell.self, forCellWithReuseIdentifier: RJServeCellID)
+        serveCollectionView.register(RJServeCollectionHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: RJServeHeaderID)
     }
 
 }
@@ -92,6 +94,16 @@ extension RJMyViewController: UICollectionViewDataSource {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RJServeCellID, for: indexPath) as! RJServeCollectionViewCell
         return cell
     }
+    
+    func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
+        if kind == UICollectionView.elementKindSectionHeader {
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: RJServeHeaderID, for: indexPath) as! RJServeCollectionHeaderView
+            return headerView
+        } else {
+            return UICollectionReusableView()
+        }
+    }
+    
 }
 
 // MARK: - UICollectionViewDelegateFlowLayout
@@ -115,7 +127,13 @@ extension RJMyViewController: UICollectionViewDelegateFlowLayout {
         return CGFloat.zero
     }
     
-    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
-        return UIEdgeInsets.zero
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForHeaderInSection section: Int) -> CGSize {
+        return CGSize(width: 0.0, height: 40.0)
     }
+    
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, referenceSizeForFooterInSection section: Int) -> CGSize {
+        return CGSize.zero
+    }
+    
+    
 }
