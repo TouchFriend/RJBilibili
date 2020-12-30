@@ -1,5 +1,5 @@
 //
-//  RJMainTabBarViewController.swift
+//  MainTabBarViewController.swift
 //  RJBilibili
 //
 //  Created by TouchWorld on 2020/12/27.
@@ -12,7 +12,7 @@ fileprivate let ViewControllerName = "ViewControllerName"
 fileprivate let TabBarItemTitle = "TabBarItemTitle"
 fileprivate let TabBarItemImage = "TabBarItemImage"
 
-class RJMainTabBarViewController: UITabBarController {
+class MainTabBarViewController: UITabBarController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +29,7 @@ class RJMainTabBarViewController: UITabBarController {
             let title = tabBarItemData[TabBarItemTitle]!
             let imageName = tabBarItemData[TabBarItemImage]!
             let navigationController = getNavigationController(viewControllerName: viewControllerName, title: title, imageName: imageName)
+            navigationController.navigationBar.isTranslucent = false
             viewControllers.append(navigationController)
         }
         self.viewControllers = viewControllers
@@ -49,31 +50,31 @@ class RJMainTabBarViewController: UITabBarController {
 
 }
 
-extension RJMainTabBarViewController {
+extension MainTabBarViewController {
     var tabBarItemDatas: Array<Dictionary<String, String>> {
         let datas = [
             [
-                ViewControllerName: "RJHomeViewController",
+                ViewControllerName: "HomeViewController",
                 TabBarItemTitle: "首页",
                 TabBarItemImage: "RJPortal-tabbar-home"
             ],
             [
-                ViewControllerName: "RJChannelViewController",
+                ViewControllerName: "ChannelViewController",
                 TabBarItemTitle: "频道",
                 TabBarItemImage: "RJPortal-tabbar-home"
             ],
             [
-                ViewControllerName: "RJTrendViewController",
+                ViewControllerName: "TrendViewController",
                 TabBarItemTitle: "动态",
                 TabBarItemImage: "RJPortal-tabbar-home"
             ],
             [
-                ViewControllerName: "RJShoppingViewController",
+                ViewControllerName: "ShoppingViewController",
                 TabBarItemTitle: "会员购",
                 TabBarItemImage: "RJPortal-tabbar-home"
             ],
             [
-                ViewControllerName: "RJMyViewController",
+                ViewControllerName: "MyViewController",
                 TabBarItemTitle: "我的",
                 TabBarItemImage: "RJPortal-tabbar-home"
             ]

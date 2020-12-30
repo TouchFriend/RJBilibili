@@ -1,5 +1,5 @@
 //
-//  RJServeCollectionViewCell.swift
+//  ServeCollectionViewCell.swift
 //  RJBilibili
 //
 //  Created by TouchWorld on 2020/12/29.
@@ -9,7 +9,7 @@
 import UIKit
 import Kingfisher
 
-class RJServeCollectionViewCell: UICollectionViewCell {
+class ServeCollectionViewCell: UICollectionViewCell {
     
     private var titleLbl: UILabel!
     private var iconImageV: UIImageView!

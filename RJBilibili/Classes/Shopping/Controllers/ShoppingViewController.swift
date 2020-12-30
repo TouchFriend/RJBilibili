@@ -1,5 +1,5 @@
 //
-//  RJChannelViewController.swift
+//  ShoppingViewController.swift
 //  RJBilibili
 //
 //  Created by TouchWorld on 2020/12/27.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RJChannelViewController: UIViewController {
+class ShoppingViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

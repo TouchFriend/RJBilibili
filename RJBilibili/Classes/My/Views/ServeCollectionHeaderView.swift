@@ -1,5 +1,5 @@
 //
-//  RJServeCollectionHeaderView.swift
+//  ServeCollectionHeaderView.swift
 //  RJBilibili
 //
 //  Created by TouchWorld on 2020/12/29.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RJServeCollectionHeaderView: UICollectionReusableView {
+class ServeCollectionHeaderView: UICollectionReusableView {
     
     private var titleLbl: UILabel!
     

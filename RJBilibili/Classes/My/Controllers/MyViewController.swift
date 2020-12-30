@@ -1,5 +1,5 @@
 //
-//  RJMyViewController.swift
+//  MyViewController.swift
 //  RJBilibili
 //
 //  Created by TouchWorld on 2020/12/27.
@@ -9,8 +9,8 @@
 import UIKit
 import SnapKit
 
-private let RJServeCellID = "RJServeCollectionViewCell"
-private let RJServeHeaderID = "RJServeCollectionHeaderView"
+private let ServeCellID = "ServeCollectionViewCell"
+private let ServeHeaderID = "ServeCollectionHeaderView"
 let RJScreenWidth = {
     UIScreen.main.bounds.size.width.native
 }()
@@ -18,7 +18,7 @@ let RJScreenHeight = {
     UIScreen.main.bounds.size.height.native
 }()
 
-class RJMyViewController: UIViewController {
+class MyViewController: UIViewController {
 
     private lazy var headerView: UIView = {
         let headerView = UIView()
@@ -49,7 +49,7 @@ class RJMyViewController: UIViewController {
                 // Fallback on earlier versions
                 make.top.equalTo(self.topLayoutGuide.snp.top)
             }
-            make.top.left.right.equalToSuperview()
+            make.left.right.equalToSuperview()
             make.height.equalTo((200.0))
         }
         
@@ -72,15 +72,15 @@ class RJMyViewController: UIViewController {
         serveCollectionView.showsHorizontalScrollIndicator = false
         serveCollectionView.dataSource = self
         serveCollectionView.delegate = self
-        serveCollectionView.register(RJServeCollectionViewCell.self, forCellWithReuseIdentifier: RJServeCellID)
-        serveCollectionView.register(RJServeCollectionHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: RJServeHeaderID)
+        serveCollectionView.register(ServeCollectionViewCell.self, forCellWithReuseIdentifier: ServeCellID)
+        serveCollectionView.register(ServeCollectionHeaderView.self, forSupplementaryViewOfKind: UICollectionView.elementKindSectionHeader, withReuseIdentifier: ServeHeaderID)
     }
 
 }
 
 // MARK: - UICollectionViewDataSource
 
-extension RJMyViewController: UICollectionViewDataSource {
+extension MyViewController: UICollectionViewDataSource {
     
     func numberOfSections(in collectionView: UICollectionView) -> Int {
         return 4
@@ -91,13 +91,13 @@ extension RJMyViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: RJServeCellID, for: indexPath) as! RJServeCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: ServeCellID, for: indexPath) as! ServeCollectionViewCell
         return cell
     }
     
     func collectionView(_ collectionView: UICollectionView, viewForSupplementaryElementOfKind kind: String, at indexPath: IndexPath) -> UICollectionReusableView {
         if kind == UICollectionView.elementKindSectionHeader {
-            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: RJServeHeaderID, for: indexPath) as! RJServeCollectionHeaderView
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind, withReuseIdentifier: ServeHeaderID, for: indexPath) as! ServeCollectionHeaderView
             return headerView
         } else {
             return UICollectionReusableView()
@@ -108,7 +108,7 @@ extension RJMyViewController: UICollectionViewDataSource {
 
 // MARK: - UICollectionViewDelegateFlowLayout
 
-extension RJMyViewController: UICollectionViewDelegateFlowLayout {
+extension MyViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         print(indexPath)

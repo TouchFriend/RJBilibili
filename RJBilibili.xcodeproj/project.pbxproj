@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		75E51F968D534DE1E747A685 /* Pods_RJBilibili.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9ADB011A056881D699FCEEF /* Pods_RJBilibili.framework */; };
-		BF2B45922598C1E8001581F3 /* RJHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B45912598C1E8001581F3 /* RJHomeViewController.swift */; };
-		BF2B459D2598C217001581F3 /* RJChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B459C2598C217001581F3 /* RJChannelViewController.swift */; };
-		BF2B45A22598C21D001581F3 /* RJTrendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B45A12598C21D001581F3 /* RJTrendViewController.swift */; };
-		BF2B45A72598C228001581F3 /* RJShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B45A62598C228001581F3 /* RJShoppingViewController.swift */; };
-		BF2B45AC2598C22E001581F3 /* RJMyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B45AB2598C22E001581F3 /* RJMyViewController.swift */; };
-		BF9AB98A259B0F070008E8C1 /* RJServeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9AB989259B0F070008E8C1 /* RJServeCollectionViewCell.swift */; };
-		BF9AB998259B1E9C0008E8C1 /* RJServeCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9AB997259B1E9C0008E8C1 /* RJServeCollectionHeaderView.swift */; };
-		BFBE76922598BE4B00EA0BF9 /* RJMainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE76912598BE4B00EA0BF9 /* RJMainTabBarViewController.swift */; };
+		BF2B45922598C1E8001581F3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B45912598C1E8001581F3 /* HomeViewController.swift */; };
+		BF2B459D2598C217001581F3 /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B459C2598C217001581F3 /* ChannelViewController.swift */; };
+		BF2B45A22598C21D001581F3 /* TrendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B45A12598C21D001581F3 /* TrendViewController.swift */; };
+		BF2B45A72598C228001581F3 /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B45A62598C228001581F3 /* ShoppingViewController.swift */; };
+		BF2B45AC2598C22E001581F3 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B45AB2598C22E001581F3 /* MyViewController.swift */; };
+		BF9AB98A259B0F070008E8C1 /* ServeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9AB989259B0F070008E8C1 /* ServeCollectionViewCell.swift */; };
+		BF9AB998259B1E9C0008E8C1 /* ServeCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9AB997259B1E9C0008E8C1 /* ServeCollectionHeaderView.swift */; };
+		BFBE76922598BE4B00EA0BF9 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE76912598BE4B00EA0BF9 /* MainTabBarViewController.swift */; };
 		BFF2CE352598BB5E00155F4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF2CE342598BB5E00155F4F /* AppDelegate.swift */; };
 		BFF2CE392598BB5E00155F4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF2CE382598BB5E00155F4F /* ViewController.swift */; };
 		BFF2CE3C2598BB5E00155F4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFF2CE3A2598BB5E00155F4F /* Main.storyboard */; };
@@ -52,14 +52,14 @@
 		9BBEB9770E8B2DB050F2037F /* Pods-RJBilibili-RJBilibiliUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJBilibili-RJBilibiliUITests.debug.xcconfig"; path = "Target Support Files/Pods-RJBilibili-RJBilibiliUITests/Pods-RJBilibili-RJBilibiliUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		B9ADB011A056881D699FCEEF /* Pods_RJBilibili.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RJBilibili.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF1683B0A3B088F70C9EE996 /* Pods-RJBilibiliTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJBilibiliTests.release.xcconfig"; path = "Target Support Files/Pods-RJBilibiliTests/Pods-RJBilibiliTests.release.xcconfig"; sourceTree = "<group>"; };
-		BF2B45912598C1E8001581F3 /* RJHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RJHomeViewController.swift; sourceTree = "<group>"; };
-		BF2B459C2598C217001581F3 /* RJChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RJChannelViewController.swift; sourceTree = "<group>"; };
-		BF2B45A12598C21D001581F3 /* RJTrendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RJTrendViewController.swift; sourceTree = "<group>"; };
-		BF2B45A62598C228001581F3 /* RJShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RJShoppingViewController.swift; sourceTree = "<group>"; };
-		BF2B45AB2598C22E001581F3 /* RJMyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RJMyViewController.swift; sourceTree = "<group>"; };
-		BF9AB989259B0F070008E8C1 /* RJServeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RJServeCollectionViewCell.swift; sourceTree = "<group>"; };
-		BF9AB997259B1E9C0008E8C1 /* RJServeCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RJServeCollectionHeaderView.swift; sourceTree = "<group>"; };
-		BFBE76912598BE4B00EA0BF9 /* RJMainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RJMainTabBarViewController.swift; sourceTree = "<group>"; };
+		BF2B45912598C1E8001581F3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		BF2B459C2598C217001581F3 /* ChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
+		BF2B45A12598C21D001581F3 /* TrendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendViewController.swift; sourceTree = "<group>"; };
+		BF2B45A62598C228001581F3 /* ShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
+		BF2B45AB2598C22E001581F3 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		BF9AB989259B0F070008E8C1 /* ServeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServeCollectionViewCell.swift; sourceTree = "<group>"; };
+		BF9AB997259B1E9C0008E8C1 /* ServeCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServeCollectionHeaderView.swift; sourceTree = "<group>"; };
+		BFBE76912598BE4B00EA0BF9 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		BFF2CE312598BB5E00155F4F /* RJBilibili.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RJBilibili.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF2CE342598BB5E00155F4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFF2CE382598BB5E00155F4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -125,7 +125,7 @@
 		BF2B45822598C1C7001581F3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BF2B45912598C1E8001581F3 /* RJHomeViewController.swift */,
+				BF2B45912598C1E8001581F3 /* HomeViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -157,7 +157,7 @@
 		BF2B45862598C1C7001581F3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BF2B45A12598C21D001581F3 /* RJTrendViewController.swift */,
+				BF2B45A12598C21D001581F3 /* TrendViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -189,7 +189,7 @@
 		BF2B458A2598C1C7001581F3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BF2B459C2598C217001581F3 /* RJChannelViewController.swift */,
+				BF2B459C2598C217001581F3 /* ChannelViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -231,7 +231,7 @@
 		BF2B458F2598C1C7001581F3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BF2B45AB2598C22E001581F3 /* RJMyViewController.swift */,
+				BF2B45AB2598C22E001581F3 /* MyViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -239,8 +239,8 @@
 		BF2B45902598C1C7001581F3 /* Views */ = {
 			isa = PBXGroup;
 			children = (
-				BF9AB989259B0F070008E8C1 /* RJServeCollectionViewCell.swift */,
-				BF9AB997259B1E9C0008E8C1 /* RJServeCollectionHeaderView.swift */,
+				BF9AB989259B0F070008E8C1 /* ServeCollectionViewCell.swift */,
+				BF9AB997259B1E9C0008E8C1 /* ServeCollectionHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -248,7 +248,7 @@
 		BF2B45992598C205001581F3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BF2B45A62598C228001581F3 /* RJShoppingViewController.swift */,
+				BF2B45A62598C228001581F3 /* ShoppingViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -287,7 +287,7 @@
 		BFBE76982598BE9E00EA0BF9 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				BFBE76912598BE4B00EA0BF9 /* RJMainTabBarViewController.swift */,
+				BFBE76912598BE4B00EA0BF9 /* MainTabBarViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -456,7 +456,7 @@
 		BFF2CE292598BB5E00155F4F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = RJ;
+				CLASSPREFIX = "";
 				LastSwiftUpdateCheck = 1230;
 				LastUpgradeCheck = 1230;
 				ORGANIZATIONNAME = RJSoft;
@@ -629,16 +629,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BFBE76922598BE4B00EA0BF9 /* RJMainTabBarViewController.swift in Sources */,
-				BF2B45922598C1E8001581F3 /* RJHomeViewController.swift in Sources */,
+				BFBE76922598BE4B00EA0BF9 /* MainTabBarViewController.swift in Sources */,
+				BF2B45922598C1E8001581F3 /* HomeViewController.swift in Sources */,
 				BFF2CE392598BB5E00155F4F /* ViewController.swift in Sources */,
-				BF2B45A72598C228001581F3 /* RJShoppingViewController.swift in Sources */,
-				BF2B45AC2598C22E001581F3 /* RJMyViewController.swift in Sources */,
+				BF2B45A72598C228001581F3 /* ShoppingViewController.swift in Sources */,
+				BF2B45AC2598C22E001581F3 /* MyViewController.swift in Sources */,
 				BFF2CE352598BB5E00155F4F /* AppDelegate.swift in Sources */,
-				BF9AB98A259B0F070008E8C1 /* RJServeCollectionViewCell.swift in Sources */,
-				BF9AB998259B1E9C0008E8C1 /* RJServeCollectionHeaderView.swift in Sources */,
-				BF2B45A22598C21D001581F3 /* RJTrendViewController.swift in Sources */,
-				BF2B459D2598C217001581F3 /* RJChannelViewController.swift in Sources */,
+				BF9AB98A259B0F070008E8C1 /* ServeCollectionViewCell.swift in Sources */,
+				BF9AB998259B1E9C0008E8C1 /* ServeCollectionHeaderView.swift in Sources */,
+				BF2B45A22598C21D001581F3 /* TrendViewController.swift in Sources */,
+				BF2B459D2598C217001581F3 /* ChannelViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

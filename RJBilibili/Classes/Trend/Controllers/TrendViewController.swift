@@ -1,5 +1,5 @@
 //
-//  RJTrendViewController.swift
+//  TrendViewController.swift
 //  RJBilibili
 //
 //  Created by TouchWorld on 2020/12/27.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RJTrendViewController: UIViewController {
+class TrendViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

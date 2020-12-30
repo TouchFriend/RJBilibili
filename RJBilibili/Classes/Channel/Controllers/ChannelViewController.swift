@@ -1,5 +1,5 @@
 //
-//  RJHomeViewController.swift
+//  ChannelViewController.swift
 //  RJBilibili
 //
 //  Created by TouchWorld on 2020/12/27.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class RJHomeViewController: UIViewController {
+class ChannelViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
