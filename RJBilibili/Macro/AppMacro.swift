@@ -9,11 +9,7 @@
 import UIKit
 
 /// 屏幕宽度
-let ScreenWidth = {
-    UIScreen.main.bounds.size.width.native
-}()
+let ScreenWidth = UIScreen.main.bounds.size.width.native
 /// 屏幕高度
-let ScreenHeight = {
-    UIScreen.main.bounds.size.height.native
-}()
+let ScreenHeight = UIScreen.main.bounds.size.height.native
 
