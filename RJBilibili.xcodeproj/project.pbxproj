@@ -13,6 +13,7 @@
 		BF2B45A22598C21D001581F3 /* TrendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B45A12598C21D001581F3 /* TrendViewController.swift */; };
 		BF2B45A72598C228001581F3 /* ShoppingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B45A62598C228001581F3 /* ShoppingViewController.swift */; };
 		BF2B45AC2598C22E001581F3 /* MyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B45AB2598C22E001581F3 /* MyViewController.swift */; };
+		BF8E88D7259DCC6200C25EEF /* AppMacro.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF8E88D6259DCC6200C25EEF /* AppMacro.swift */; };
 		BF9AB98A259B0F070008E8C1 /* ServeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9AB989259B0F070008E8C1 /* ServeCollectionViewCell.swift */; };
 		BF9AB998259B1E9C0008E8C1 /* ServeCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9AB997259B1E9C0008E8C1 /* ServeCollectionHeaderView.swift */; };
 		BFBE76922598BE4B00EA0BF9 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE76912598BE4B00EA0BF9 /* MainTabBarViewController.swift */; };
@@ -57,6 +58,7 @@
 		BF2B45A12598C21D001581F3 /* TrendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendViewController.swift; sourceTree = "<group>"; };
 		BF2B45A62598C228001581F3 /* ShoppingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingViewController.swift; sourceTree = "<group>"; };
 		BF2B45AB2598C22E001581F3 /* MyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyViewController.swift; sourceTree = "<group>"; };
+		BF8E88D6259DCC6200C25EEF /* AppMacro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppMacro.swift; sourceTree = "<group>"; };
 		BF9AB989259B0F070008E8C1 /* ServeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServeCollectionViewCell.swift; sourceTree = "<group>"; };
 		BF9AB997259B1E9C0008E8C1 /* ServeCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServeCollectionHeaderView.swift; sourceTree = "<group>"; };
 		BFBE76912598BE4B00EA0BF9 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
@@ -66,7 +68,7 @@
 		BFF2CE3B2598BB5E00155F4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		BFF2CE3D2598BB5F00155F4F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFF2CE402598BB5F00155F4F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		BFF2CE422598BB5F00155F4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		BFF2CE422598BB5F00155F4F /* RJBilibiliInfo.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = RJBilibiliInfo.plist; sourceTree = "<group>"; };
 		BFF2CE472598BB5F00155F4F /* RJBilibiliTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RJBilibiliTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF2CE4B2598BB6000155F4F /* RJBilibiliTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RJBilibiliTests.swift; sourceTree = "<group>"; };
 		BFF2CE4D2598BB6000155F4F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -267,6 +269,54 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		BF8E88B8259DC96F00C25EEF /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				BFF2CE382598BB5E00155F4F /* ViewController.swift */,
+				BFF2CE3A2598BB5E00155F4F /* Main.storyboard */,
+				BFF2CE3D2598BB5F00155F4F /* Assets.xcassets */,
+				BFF2CE3F2598BB5F00155F4F /* LaunchScreen.storyboard */,
+				BFF2CE422598BB5F00155F4F /* RJBilibiliInfo.plist */,
+			);
+			path = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		BF8E88CB259DCA1900C25EEF /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				BF8E88D6259DCC6200C25EEF /* AppMacro.swift */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
+		BF8E88CC259DCA2A00C25EEF /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		BF8E88CD259DCA3200C25EEF /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Vendor;
+			sourceTree = "<group>";
+		};
+		BF8E88CE259DCA4300C25EEF /* General */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		BF8E88CF259DCA5C00C25EEF /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		BFBE76962598BE9E00EA0BF9 /* Main */ = {
 			isa = PBXGroup;
 			children = (
@@ -324,13 +374,14 @@
 		BFF2CE332598BB5E00155F4F /* RJBilibili */ = {
 			isa = PBXGroup;
 			children = (
-				BFF2CE6D2598BE0900155F4F /* Classes */,
 				BFF2CE342598BB5E00155F4F /* AppDelegate.swift */,
-				BFF2CE382598BB5E00155F4F /* ViewController.swift */,
-				BFF2CE3A2598BB5E00155F4F /* Main.storyboard */,
-				BFF2CE3D2598BB5F00155F4F /* Assets.xcassets */,
-				BFF2CE3F2598BB5F00155F4F /* LaunchScreen.storyboard */,
-				BFF2CE422598BB5F00155F4F /* Info.plist */,
+				BFF2CE6D2598BE0900155F4F /* Classes */,
+				BF8E88CF259DCA5C00C25EEF /* Helper */,
+				BF8E88CE259DCA4300C25EEF /* General */,
+				BF8E88CD259DCA3200C25EEF /* Vendor */,
+				BF8E88CC259DCA2A00C25EEF /* Resource */,
+				BF8E88CB259DCA1900C25EEF /* Macro */,
+				BF8E88B8259DC96F00C25EEF /* Supporting Files */,
 			);
 			path = RJBilibili;
 			sourceTree = "<group>";
@@ -635,6 +686,7 @@
 				BF2B45A72598C228001581F3 /* ShoppingViewController.swift in Sources */,
 				BF2B45AC2598C22E001581F3 /* MyViewController.swift in Sources */,
 				BFF2CE352598BB5E00155F4F /* AppDelegate.swift in Sources */,
+				BF8E88D7259DCC6200C25EEF /* AppMacro.swift in Sources */,
 				BF9AB98A259B0F070008E8C1 /* ServeCollectionViewCell.swift in Sources */,
 				BF9AB998259B1E9C0008E8C1 /* ServeCollectionHeaderView.swift in Sources */,
 				BF2B45A22598C21D001581F3 /* TrendViewController.swift in Sources */,
@@ -817,7 +869,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RJ2G45B9KH;
-				INFOPLIST_FILE = RJBilibili/Info.plist;
+				INFOPLIST_FILE = "RJBilibili/Supporting Files/RJBilibiliInfo.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -838,7 +890,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RJ2G45B9KH;
-				INFOPLIST_FILE = RJBilibili/Info.plist;
+				INFOPLIST_FILE = "RJBilibili/Supporting Files/RJBilibiliInfo.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

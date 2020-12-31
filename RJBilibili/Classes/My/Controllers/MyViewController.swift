@@ -11,12 +11,6 @@ import SnapKit
 
 private let ServeCellID = "ServeCollectionViewCell"
 private let ServeHeaderID = "ServeCollectionHeaderView"
-let RJScreenWidth = {
-    UIScreen.main.bounds.size.width.native
-}()
-let RJScreenHeight = {
-    UIScreen.main.bounds.size.height.native
-}()
 
 class MyViewController: UIViewController {
 
@@ -115,7 +109,7 @@ extension MyViewController: UICollectionViewDelegateFlowLayout {
     }
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
-        let itemWidth = (RJScreenWidth - maxInteritemSpacing * 3.0) / 4.0
+        let itemWidth = (ScreenWidth - maxInteritemSpacing * 3.0) / 4.0
         return CGSize(width: itemWidth, height: itemWidth)
     }
     
