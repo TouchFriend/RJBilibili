@@ -7,6 +7,7 @@ target 'RJBilibili' do
   pod 'SnapKit'
   pod 'Kingfisher'
   pod 'Alamofire'
+  pod 'JXSegmentedView'
 
   target 'RJBilibiliTests' do
     inherit! :search_paths
