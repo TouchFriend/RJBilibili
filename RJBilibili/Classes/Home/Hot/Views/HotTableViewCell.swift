@@ -10,8 +10,27 @@ import UIKit
 
 class HotTableViewCell: UITableViewCell {
     
-    var iconImageV: UIImageView!
-    var titleLbl: UILabel!
+    var title: String? {
+        didSet {
+            titleLbl.text = title
+        }
+    }
+    private var _iconName: String?
+    var iconName: String? {
+        get {
+            _iconName
+        }
+        set {
+            _iconName = newValue
+            var icon: UIImage?
+            if let newValue = newValue {
+                icon = UIImage(named: newValue)
+            }
+            iconImageV.image = icon
+        }
+    }
+    private var iconImageV: UIImageView!
+    private var titleLbl: UILabel!
     
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
@@ -24,11 +43,10 @@ class HotTableViewCell: UITableViewCell {
 
     // MARK: - Setup Init
     
-    func setupInit() {
+    private func setupInit() {
         contentView.backgroundColor = .white
         
-        let icon = UIImage(named: "test")
-        iconImageV = UIImageView(image: icon)
+        iconImageV = UIImageView()
         contentView.addSubview(iconImageV)
         iconImageV.snp.makeConstraints { (make) in
             make.top.equalToSuperview().offset(10.0)
@@ -46,7 +64,7 @@ class HotTableViewCell: UITableViewCell {
             make.left.equalTo(iconImageV.snp.right).offset(10.0)
             make.right.lessThanOrEqualToSuperview().offset(-10.0)
         }
-        titleLbl.text = "标题"
+        titleLbl.text = title
     }
 
 }

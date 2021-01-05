@@ -8,14 +8,6 @@ target 'RJBilibili' do
   pod 'Kingfisher'
   pod 'Alamofire'
   pod 'JXSegmentedView'
-
-  target 'RJBilibiliTests' do
-    inherit! :search_paths
-    # Pods for testing
-  end
-
-  target 'RJBilibiliUITests' do
-    # Pods for testing
-  end
+  pod 'MJRefresh'
 
 end

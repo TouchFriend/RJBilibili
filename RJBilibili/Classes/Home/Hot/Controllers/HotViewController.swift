@@ -8,13 +8,21 @@
 
 import UIKit
 import JXSegmentedView
+import MJRefresh
 
 private let CellID = "HotTableViewCell"
 private let HeaderViewID = "HotTableViewHeaderView"
 
 class HotViewController: UIViewController {
 
-    var hotTableView: UITableView!
+    private var hotTableView: UITableView!
+    private lazy var titles: [String] = {
+        var titles = [String]()
+        for i in 0..<10 {
+            titles.append(String(i))
+        }
+        return titles
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,13 +32,13 @@ class HotViewController: UIViewController {
     
     // MARK: - Setup Init
     
-    func setupInit() {
+    private func setupInit() {
         view.backgroundColor = .white
         
         setupTableView()
     }
     
-    func setupTableView() {
+    private func setupTableView() {
         hotTableView = UITableView(frame: CGRect.zero, style: .grouped)
         view.addSubview(hotTableView)
         hotTableView.snp.makeConstraints { (make) in
@@ -46,8 +54,40 @@ class HotViewController: UIViewController {
         hotTableView.delegate = self
         hotTableView.register(HotTableViewCell.self, forCellReuseIdentifier: CellID)
         hotTableView.register(HotTableViewHeaderView.self, forHeaderFooterViewReuseIdentifier: HeaderViewID)
+        hotTableView.mj_header = MJRefreshNormalHeader(refreshingTarget: self, refreshingAction: #selector(loadNewData))
+        hotTableView.mj_footer = MJRefreshBackNormalFooter(refreshingBlock: { [weak self] in
+            guard let self = self else {
+                return
+            }
+            
+            self.loadMoreData()
+        })
+        hotTableView.mj_footer?.ignoredScrollViewContentInsetBottom = 44.0
     }
     
+}
+
+// MARK: - Network
+
+extension HotViewController {
+    
+    @objc func loadNewData() {
+        hotTableView.mj_header?.endRefreshing()
+        titles.removeAll()
+        for i in 0..<10 {
+            titles.append(String(i))
+        }
+        hotTableView.reloadData()
+    }
+    
+    func loadMoreData() {
+        hotTableView.mj_footer?.endRefreshing()
+        let count = titles.count
+        for i in count..<(count + 10) {
+            titles.append(String(i))
+        }
+        hotTableView.reloadData()
+    }
 }
 
 // MARK: - UITableViewDataSource
@@ -59,11 +99,14 @@ extension HotViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 30
+        return titles.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let title = titles[indexPath.row]
         let cell = tableView.dequeueReusableCell(withIdentifier: CellID, for: indexPath) as! HotTableViewCell
+        cell.title = title
+        cell.iconName = "test"
         return cell
     }
     
