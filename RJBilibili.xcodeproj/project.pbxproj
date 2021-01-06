@@ -8,6 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		75E51F968D534DE1E747A685 /* Pods_RJBilibili.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B9ADB011A056881D699FCEEF /* Pods_RJBilibili.framework */; };
+		BF01B73B25A59938004109A3 /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01B73A25A59938004109A3 /* BaseViewController.swift */; };
+		BF01B74325A5995E004109A3 /* BaseTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01B74225A5995E004109A3 /* BaseTableViewController.swift */; };
+		BF01B74825A5996B004109A3 /* BaseCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01B74725A5996B004109A3 /* BaseCollectionViewController.swift */; };
+		BF01B74D25A59982004109A3 /* BaseTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01B74C25A59982004109A3 /* BaseTabBarController.swift */; };
+		BF01B77125A599DE004109A3 /* BaseNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01B77025A599DE004109A3 /* BaseNavigationController.swift */; };
+		BF01B77625A59A1D004109A3 /* RecommendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01B77525A59A1D004109A3 /* RecommendViewController.swift */; };
+		BF01B78525A5B94A004109A3 /* BannerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF01B78425A5B94A004109A3 /* BannerView.swift */; };
+		BF01B79025A5BB4B004109A3 /* 4.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF01B78925A5BB4B004109A3 /* 4.jpg */; };
+		BF01B79125A5BB4B004109A3 /* 2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF01B78A25A5BB4B004109A3 /* 2.jpg */; };
+		BF01B79225A5BB4B004109A3 /* 3.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF01B78B25A5BB4B004109A3 /* 3.jpg */; };
+		BF01B79325A5BB4B004109A3 /* 1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF01B78C25A5BB4B004109A3 /* 1.jpg */; };
+		BF01B79425A5BB4B004109A3 /* 5.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF01B78D25A5BB4B004109A3 /* 5.jpg */; };
+		BF01B79525A5BB4B004109A3 /* 6.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF01B78E25A5BB4B004109A3 /* 6.jpg */; };
+		BF01B79625A5BB4B004109A3 /* 7.jpg in Resources */ = {isa = PBXBuildFile; fileRef = BF01B78F25A5BB4B004109A3 /* 7.jpg */; };
 		BF2B45922598C1E8001581F3 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B45912598C1E8001581F3 /* HomeViewController.swift */; };
 		BF2B459D2598C217001581F3 /* ChannelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B459C2598C217001581F3 /* ChannelViewController.swift */; };
 		BF2B45A22598C21D001581F3 /* TrendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF2B45A12598C21D001581F3 /* TrendViewController.swift */; };
@@ -50,6 +64,20 @@
 /* Begin PBXFileReference section */
 		68E2CC6002A2CE6D335E4D7F /* Pods-RJBilibili.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RJBilibili.debug.xcconfig"; path = "Target Support Files/Pods-RJBilibili/Pods-RJBilibili.debug.xcconfig"; sourceTree = "<group>"; };
 		B9ADB011A056881D699FCEEF /* Pods_RJBilibili.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RJBilibili.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF01B73A25A59938004109A3 /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+		BF01B74225A5995E004109A3 /* BaseTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTableViewController.swift; sourceTree = "<group>"; };
+		BF01B74725A5996B004109A3 /* BaseCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseCollectionViewController.swift; sourceTree = "<group>"; };
+		BF01B74C25A59982004109A3 /* BaseTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseTabBarController.swift; sourceTree = "<group>"; };
+		BF01B77025A599DE004109A3 /* BaseNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseNavigationController.swift; sourceTree = "<group>"; };
+		BF01B77525A59A1D004109A3 /* RecommendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendViewController.swift; sourceTree = "<group>"; };
+		BF01B78425A5B94A004109A3 /* BannerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BannerView.swift; sourceTree = "<group>"; };
+		BF01B78925A5BB4B004109A3 /* 4.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 4.jpg; sourceTree = "<group>"; };
+		BF01B78A25A5BB4B004109A3 /* 2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 2.jpg; sourceTree = "<group>"; };
+		BF01B78B25A5BB4B004109A3 /* 3.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 3.jpg; sourceTree = "<group>"; };
+		BF01B78C25A5BB4B004109A3 /* 1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 1.jpg; sourceTree = "<group>"; };
+		BF01B78D25A5BB4B004109A3 /* 5.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 5.jpg; sourceTree = "<group>"; };
+		BF01B78E25A5BB4B004109A3 /* 6.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 6.jpg; sourceTree = "<group>"; };
+		BF01B78F25A5BB4B004109A3 /* 7.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 7.jpg; sourceTree = "<group>"; };
 		BF2B45912598C1E8001581F3 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		BF2B459C2598C217001581F3 /* ChannelViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChannelViewController.swift; sourceTree = "<group>"; };
 		BF2B45A12598C21D001581F3 /* TrendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendViewController.swift; sourceTree = "<group>"; };
@@ -105,9 +133,55 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		BF01B73525A59906004109A3 /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				BF01B73725A59906004109A3 /* Controllers */,
+				BF01B73625A59906004109A3 /* Models */,
+				BF01B73825A59906004109A3 /* Views */,
+			);
+			path = Recommend;
+			sourceTree = "<group>";
+		};
+		BF01B73625A59906004109A3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		BF01B73725A59906004109A3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				BF01B77525A59A1D004109A3 /* RecommendViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		BF01B73825A59906004109A3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BF01B78425A5B94A004109A3 /* BannerView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BF01B73925A5991F004109A3 /* BaseViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				BF01B73A25A59938004109A3 /* BaseViewController.swift */,
+				BF01B74225A5995E004109A3 /* BaseTableViewController.swift */,
+				BF01B74725A5996B004109A3 /* BaseCollectionViewController.swift */,
+				BF01B74C25A59982004109A3 /* BaseTabBarController.swift */,
+				BF01B77025A599DE004109A3 /* BaseNavigationController.swift */,
+			);
+			path = BaseViewControllers;
+			sourceTree = "<group>";
+		};
 		BF2B45802598C1C7001581F3 /* Home */ = {
 			isa = PBXGroup;
 			children = (
+				BF01B73525A59906004109A3 /* Recommend */,
 				BF66796A25A2ACED00341474 /* Hot */,
 				BF2B45822598C1C7001581F3 /* Controllers */,
 				BF2B45812598C1C7001581F3 /* Models */,
@@ -325,6 +399,13 @@
 		BF8E88CC259DCA2A00C25EEF /* Resource */ = {
 			isa = PBXGroup;
 			children = (
+				BF01B78C25A5BB4B004109A3 /* 1.jpg */,
+				BF01B78A25A5BB4B004109A3 /* 2.jpg */,
+				BF01B78B25A5BB4B004109A3 /* 3.jpg */,
+				BF01B78925A5BB4B004109A3 /* 4.jpg */,
+				BF01B78D25A5BB4B004109A3 /* 5.jpg */,
+				BF01B78E25A5BB4B004109A3 /* 6.jpg */,
+				BF01B78F25A5BB4B004109A3 /* 7.jpg */,
 			);
 			path = Resource;
 			sourceTree = "<group>";
@@ -347,6 +428,7 @@
 		BF8E88CF259DCA5C00C25EEF /* Helper */ = {
 			isa = PBXGroup;
 			children = (
+				BF01B73925A5991F004109A3 /* BaseViewControllers */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -575,9 +657,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BF01B79525A5BB4B004109A3 /* 6.jpg in Resources */,
+				BF01B79025A5BB4B004109A3 /* 4.jpg in Resources */,
+				BF01B79425A5BB4B004109A3 /* 5.jpg in Resources */,
 				BFF2CE412598BB5F00155F4F /* LaunchScreen.storyboard in Resources */,
+				BF01B79125A5BB4B004109A3 /* 2.jpg in Resources */,
+				BF01B79225A5BB4B004109A3 /* 3.jpg in Resources */,
 				BFF2CE3E2598BB5F00155F4F /* Assets.xcassets in Resources */,
+				BF01B79625A5BB4B004109A3 /* 7.jpg in Resources */,
 				BFF2CE3C2598BB5E00155F4F /* Main.storyboard in Resources */,
+				BF01B79325A5BB4B004109A3 /* 1.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -646,17 +735,24 @@
 			files = (
 				BF66796F25A2AD0D00341474 /* HotViewController.swift in Sources */,
 				BF779FEF25A2FD2200F6ED6B /* HotTableViewHeaderView.swift in Sources */,
+				BF01B77625A59A1D004109A3 /* RecommendViewController.swift in Sources */,
+				BF01B74D25A59982004109A3 /* BaseTabBarController.swift in Sources */,
 				BFBE76922598BE4B00EA0BF9 /* MainTabBarViewController.swift in Sources */,
 				BF2B45922598C1E8001581F3 /* HomeViewController.swift in Sources */,
+				BF01B74325A5995E004109A3 /* BaseTableViewController.swift in Sources */,
 				BFF2CE392598BB5E00155F4F /* ViewController.swift in Sources */,
+				BF01B78525A5B94A004109A3 /* BannerView.swift in Sources */,
 				BF2B45A72598C228001581F3 /* ShoppingViewController.swift in Sources */,
+				BF01B77125A599DE004109A3 /* BaseNavigationController.swift in Sources */,
 				BF2B45AC2598C22E001581F3 /* MyViewController.swift in Sources */,
 				BFF2CE352598BB5E00155F4F /* AppDelegate.swift in Sources */,
+				BF01B74825A5996B004109A3 /* BaseCollectionViewController.swift in Sources */,
 				BF8E88D7259DCC6200C25EEF /* AppMacro.swift in Sources */,
 				BF779FEA25A2F8E300F6ED6B /* HotTableViewCell.swift in Sources */,
 				BF9AB98A259B0F070008E8C1 /* ServeCollectionViewCell.swift in Sources */,
 				BF779FFC25A303C500F6ED6B /* UIView+Frame.swift in Sources */,
 				BF9AB998259B1E9C0008E8C1 /* ServeCollectionHeaderView.swift in Sources */,
+				BF01B73B25A59938004109A3 /* BaseViewController.swift in Sources */,
 				BF2B45A22598C21D001581F3 /* TrendViewController.swift in Sources */,
 				BF2B459D2598C217001581F3 /* ChannelViewController.swift in Sources */,
 			);

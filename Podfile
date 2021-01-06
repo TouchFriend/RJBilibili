@@ -9,5 +9,6 @@ target 'RJBilibili' do
   pod 'Alamofire'
   pod 'JXSegmentedView'
   pod 'MJRefresh'
-
+  pod 'FSPagerView'
+  
 end

@@ -19,7 +19,10 @@ class HomeViewController: UIViewController {
     var titles = ["直播", "推荐", "热门", "追番", "影视", "跨晚", "抗击疫情", "小康"]
     lazy var viewLists: [JXSegmentedListContainerViewListDelegate] = {
         var viewLists = [JXSegmentedListContainerViewListDelegate]()
-        for _ in titles {
+        let rVC = RecommendViewController()
+        viewLists.append(rVC)
+        let count = titles.count - viewLists.count
+        for _ in 0..<count {
             let viewList = HotViewController()
             viewLists.append(viewList)
         }
