@@ -35,6 +35,8 @@
 		BF9AB98A259B0F070008E8C1 /* ServeCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9AB989259B0F070008E8C1 /* ServeCollectionViewCell.swift */; };
 		BF9AB998259B1E9C0008E8C1 /* ServeCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF9AB997259B1E9C0008E8C1 /* ServeCollectionHeaderView.swift */; };
 		BFBE76922598BE4B00EA0BF9 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE76912598BE4B00EA0BF9 /* MainTabBarViewController.swift */; };
+		BFCF130025AC498F005BDD77 /* RecommendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCF12FF25AC498F005BDD77 /* RecommendCollectionViewCell.swift */; };
+		BFCF130525AC4D0B005BDD77 /* RecommendCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCF130425AC4D0B005BDD77 /* RecommendCollectionHeaderView.swift */; };
 		BFF2CE352598BB5E00155F4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF2CE342598BB5E00155F4F /* AppDelegate.swift */; };
 		BFF2CE392598BB5E00155F4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF2CE382598BB5E00155F4F /* ViewController.swift */; };
 		BFF2CE3C2598BB5E00155F4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFF2CE3A2598BB5E00155F4F /* Main.storyboard */; };
@@ -91,6 +93,8 @@
 		BF9AB989259B0F070008E8C1 /* ServeCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServeCollectionViewCell.swift; sourceTree = "<group>"; };
 		BF9AB997259B1E9C0008E8C1 /* ServeCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ServeCollectionHeaderView.swift; sourceTree = "<group>"; };
 		BFBE76912598BE4B00EA0BF9 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
+		BFCF12FF25AC498F005BDD77 /* RecommendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCollectionViewCell.swift; sourceTree = "<group>"; };
+		BFCF130425AC4D0B005BDD77 /* RecommendCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCollectionHeaderView.swift; sourceTree = "<group>"; };
 		BFF2CE312598BB5E00155F4F /* RJBilibili.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RJBilibili.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF2CE342598BB5E00155F4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFF2CE382598BB5E00155F4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -162,6 +166,8 @@
 			isa = PBXGroup;
 			children = (
 				BF01B78425A5B94A004109A3 /* BannerView.swift */,
+				BFCF12FF25AC498F005BDD77 /* RecommendCollectionViewCell.swift */,
+				BFCF130425AC4D0B005BDD77 /* RecommendCollectionHeaderView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -736,10 +742,12 @@
 				BF66796F25A2AD0D00341474 /* HotViewController.swift in Sources */,
 				BF779FEF25A2FD2200F6ED6B /* HotTableViewHeaderView.swift in Sources */,
 				BF01B77625A59A1D004109A3 /* RecommendViewController.swift in Sources */,
+				BFCF130025AC498F005BDD77 /* RecommendCollectionViewCell.swift in Sources */,
 				BF01B74D25A59982004109A3 /* BaseTabBarController.swift in Sources */,
 				BFBE76922598BE4B00EA0BF9 /* MainTabBarViewController.swift in Sources */,
 				BF2B45922598C1E8001581F3 /* HomeViewController.swift in Sources */,
 				BF01B74325A5995E004109A3 /* BaseTableViewController.swift in Sources */,
+				BFCF130525AC4D0B005BDD77 /* RecommendCollectionHeaderView.swift in Sources */,
 				BFF2CE392598BB5E00155F4F /* ViewController.swift in Sources */,
 				BF01B78525A5B94A004109A3 /* BannerView.swift in Sources */,
 				BF2B45A72598C228001581F3 /* ShoppingViewController.swift in Sources */,
@@ -931,6 +939,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RJ2G45B9KH;
 				INFOPLIST_FILE = "RJBilibili/Supporting Files/RJBilibiliInfo.plist";
@@ -941,6 +950,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.RJSoftware.RJBilibili;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};
@@ -952,6 +962,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = RJ2G45B9KH;
 				INFOPLIST_FILE = "RJBilibili/Supporting Files/RJBilibiliInfo.plist";
@@ -962,6 +973,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.RJSoftware.RJBilibili;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = 1;
 			};

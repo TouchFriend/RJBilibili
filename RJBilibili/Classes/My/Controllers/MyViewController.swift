@@ -11,6 +11,7 @@ import SnapKit
 
 private let ServeCellID = "ServeCollectionViewCell"
 private let ServeHeaderID = "ServeCollectionHeaderView"
+private let maxInteritemSpacing = 10.0
 
 class MyViewController: UIViewController {
 
@@ -21,8 +22,6 @@ class MyViewController: UIViewController {
     }()
     
     private var serveCollectionView: UICollectionView!
-    
-    private let maxInteritemSpacing = 10.0
     
     override func viewDidLoad() {
         super.viewDidLoad()

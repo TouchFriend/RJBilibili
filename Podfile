@@ -10,5 +10,6 @@ target 'RJBilibili' do
   pod 'JXSegmentedView'
   pod 'MJRefresh'
   pod 'FSPagerView'
+  pod 'EmptyDataSet-Swift'
   
 end
