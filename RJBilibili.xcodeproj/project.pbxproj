@@ -37,6 +37,7 @@
 		BFBE76922598BE4B00EA0BF9 /* MainTabBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFBE76912598BE4B00EA0BF9 /* MainTabBarViewController.swift */; };
 		BFCF130025AC498F005BDD77 /* RecommendCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCF12FF25AC498F005BDD77 /* RecommendCollectionViewCell.swift */; };
 		BFCF130525AC4D0B005BDD77 /* RecommendCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFCF130425AC4D0B005BDD77 /* RecommendCollectionHeaderView.swift */; };
+		BFD5D77525AD8F4C004D3DF8 /* EmptyViewHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD5D77425AD8F4C004D3DF8 /* EmptyViewHelper.swift */; };
 		BFF2CE352598BB5E00155F4F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF2CE342598BB5E00155F4F /* AppDelegate.swift */; };
 		BFF2CE392598BB5E00155F4F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF2CE382598BB5E00155F4F /* ViewController.swift */; };
 		BFF2CE3C2598BB5E00155F4F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFF2CE3A2598BB5E00155F4F /* Main.storyboard */; };
@@ -95,6 +96,7 @@
 		BFBE76912598BE4B00EA0BF9 /* MainTabBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarViewController.swift; sourceTree = "<group>"; };
 		BFCF12FF25AC498F005BDD77 /* RecommendCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCollectionViewCell.swift; sourceTree = "<group>"; };
 		BFCF130425AC4D0B005BDD77 /* RecommendCollectionHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecommendCollectionHeaderView.swift; sourceTree = "<group>"; };
+		BFD5D77425AD8F4C004D3DF8 /* EmptyViewHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyViewHelper.swift; sourceTree = "<group>"; };
 		BFF2CE312598BB5E00155F4F /* RJBilibili.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RJBilibili.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFF2CE342598BB5E00155F4F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFF2CE382598BB5E00155F4F /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -435,6 +437,7 @@
 			isa = PBXGroup;
 			children = (
 				BF01B73925A5991F004109A3 /* BaseViewControllers */,
+				BFD5D77425AD8F4C004D3DF8 /* EmptyViewHelper.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -751,6 +754,7 @@
 				BFF2CE392598BB5E00155F4F /* ViewController.swift in Sources */,
 				BF01B78525A5B94A004109A3 /* BannerView.swift in Sources */,
 				BF2B45A72598C228001581F3 /* ShoppingViewController.swift in Sources */,
+				BFD5D77525AD8F4C004D3DF8 /* EmptyViewHelper.swift in Sources */,
 				BF01B77125A599DE004109A3 /* BaseNavigationController.swift in Sources */,
 				BF2B45AC2598C22E001581F3 /* MyViewController.swift in Sources */,
 				BFF2CE352598BB5E00155F4F /* AppDelegate.swift in Sources */,

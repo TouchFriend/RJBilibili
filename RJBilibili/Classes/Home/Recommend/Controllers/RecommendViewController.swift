@@ -62,25 +62,14 @@ class RecommendViewController: BaseViewController {
             self.loadMoreData()
         })
         recommendCollectionView.mj_footer?.ignoredScrollViewContentInsetBottom = 44.0
-        recommendCollectionView.emptyDataSetView { (emptyView) in
-            let titleAttributes = [
-                NSAttributedString.Key.foregroundColor: UIColor.black,
-                NSAttributedString.Key.font: UIFont.systemFont(ofSize: 15.0)
-            ]
-            let buttonTitleAttributes = [
-                NSAttributedString.Key.foregroundColor: UIColor.black,
-                NSAttributedString.Key.font: UIFont.systemFont(ofSize: 15.0)
-            ]
-            emptyView.image(UIImage(named: "icon_safari"))
-                .titleLabelString(NSAttributedString(string: "页面加载失败，请重试", attributes: titleAttributes))
-                .buttonTitle(NSAttributedString(string: "刷新一下", attributes: buttonTitleAttributes), for: .normal)
-                .isScrollAllowed(true)
-                .verticalSpace(40.0)
-                .verticalOffset(-40.0)
-                .didTapDataButton {
-                    self.loadNewData()
-                }
+        let emptyClosure = EmptyViewHelper.recommendEmptyViewConfiguration { [weak self] in
+            guard let self = self else {
+                return
+            }
+            
+            self.loadNewData()
         }
+        recommendCollectionView.emptyDataSetView(emptyClosure)
     }
     
     
